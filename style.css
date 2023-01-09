@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./assets/BlackBackground.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navbar {
+  margin: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  width: 400px;
+  margin-right: 4rem;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .sidebar {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+header .animate__fadeInDown .nav-content .nav-links-2 ul {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15%;
+  justify-content: space-around;
+}
+
+.nav-links-2 ul li {
+  list-style-type: none;
+}
+
+.nav-links-2 ul li a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header {
+  height: 90vh;
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 2.5rem;
+  right: 2rem;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.menu-bar1,
+.menu-bar2 {
+  width: 3.5rem;
+  height: 0.2rem;
+  background-color: #fff;
+  margin: 0.8rem 0;
+  transition: 0.4s;
+}
+
+.menu-bar1 {
+  width: 2rem;
+  margin-left: auto;
+}
+
+.active .menu-bar1 {
+  transform: rotate(-45deg) translate(-0.2rem, 0.2rem);
+  width: 3.5rem;
+}
+
+.active .menu-bar2 {
+  transform: rotate(45deg) translate(-0.4rem, -0.6rem);
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.links {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.heading span {
+  font-size: 40px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+@supports ((text-stroke: 2px black) or (-webkit-text-stroke: 2px black)) {
+  .heading span {
+    color: transparent;
+    -webkit-text-stroke: 0.2px white;
+    text-stroke: 0.2px black;
+    text-shadow: none;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 6rem;
+}
+
+.scroll-down {
+  max-width: 190px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.down-arrow {
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.scroll-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fafafa;
+}
+
+.rocket img {
+  width: 700px;
+  overflow-y: clip;
+}
+
+.contact button {
+  width: 153px;
+  height: 54px;
+  background: linear-gradient(90deg, #0358ac 0%, #2d2d86 100%);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 27px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  color: #fff;
+  border: none;
+}
+
+.hide {
+  display: none;
+}
+
+.unhide {
+  display: block;
+}
+
+.actions-unhide {
+  display: flex;
+}
+
+#actions-2 {
+  margin-top: 4rem;
+}
+
+.social {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links2:hover {
+  border-bottom: 2px solid white;
+}
